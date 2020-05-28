@@ -1,0 +1,54 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+        maven {
+            name "burgerbude-repo"
+            url "http://repo.burgerbude.org/"
+        }
+        maven {
+            name "forge-repo"
+            url "http://files.minecraftforge.net/maven/"
+        }
+    }
+
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+        classpath 'org.burgerbude.labygradle:LabyGradle:0.1.3'
+    }
+}
+
+apply plugin: 'net.minecraftforge.gradle.forge'
+apply plugin: 'org.burgerbude.labygradle'
+
+group = "your.domain"
+version = "1.0.0"
+
+ext {
+    // The forge mdk version
+    FORGE_VERSION = "1.12.2-14.23.0.2512"
+    // The mapping version
+    MAPPINGS = "snapshot_20180814"
+}
+
+minecraft {
+    version = FORGE_VERSION
+    runDir = "run"
+    mappings = MAPPINGS
+}
+
+labymod {
+    labymod(MAPPINGS, "1.12.2")
+    config {
+        mainClass 'org.burgerbude.labymod.addons.example.ExampleAddon'
+    }
+}
+
+dependencies {
+}
+
+reobf {
+    buildVanillaAddon {
+        useNotchSrg()
+    }
+}
