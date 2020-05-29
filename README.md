@@ -2,12 +2,6 @@
     <h1>LabyMod Addon Template</h1>
 </div>
 <br>
-<div align="center">
-    <h4>BurgerbudeORG Discord</h4>
-    <img src="https://img.shields.io/discord/493159734791241749?color=7289DA&label=discord&logo=discord&style=for-the-badge&link=https://discord.burgerbude.org/">
-    <h4>LabyMod Developer Discord</h4>
-    <img src="https://img.shields.io/discord/493159734791241749?color=7289DA&label=discord&logo=discord&style=for-the-badge&link=https://labymod.net/dc/dev">
-</div>
 
 Click [here](https://discord.burgerbude.org/) to join my discord for support or the official [LabyMod](https://labymod.net/dc/dev) Developer discord!
 
