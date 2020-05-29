@@ -13,7 +13,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.1-SNAPSHOT'
         classpath 'org.burgerbude.labygradle:LabyGradle:0.1.3'
     }
 }
@@ -26,9 +26,9 @@ version = "1.0.0"
 
 ext {
     // The forge mdk version
-    FORGE_VERSION = "1.12.2-14.23.0.2512"
+    FORGE_VERSION = "1.8.9-11.15.1.1855"
     // The mapping version
-    MAPPINGS = "snapshot_20180814"
+    MAPPINGS = "stable_20"
 }
 
 minecraft {
@@ -38,7 +38,7 @@ minecraft {
 }
 
 labymod {
-    labymod(MAPPINGS, "1.12.2")
+    labymod(MAPPINGS, "1.8.9")
     config {
         mainClass 'org.burgerbude.labymod.addons.example.ExampleAddon'
     }
