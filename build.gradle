@@ -24,6 +24,8 @@ apply plugin: 'org.burgerbude.labygradle'
 group = "your.domain"
 version = "1.0.0"
 
+sourceCompatibility = targetCompatibility = JavaVersion.VERSION_1_8
+
 ext {
     // The forge mdk version
     FORGE_VERSION = "1.8.9-11.15.1.1855"
